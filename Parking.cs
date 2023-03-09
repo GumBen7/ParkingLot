@@ -18,8 +18,12 @@ namespace ParkingLot {
         }
         public int CarsCount() => this._cars.Count;
 
-        public List<string> CarList() {
-            return new List<string>(this._cars.Keys);
+        public List<Car> CarList() {
+            List<Car> list = new List<Car>();
+            foreach (var rec in this._cars.Values) {
+                list.Add(rec.ParkedCar);
+            }
+            return list;
         }
 
         public Car GetCarByNumber(string number) => this._cars[number].ParkedCar;
