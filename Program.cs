@@ -8,6 +8,10 @@
             foreach (var c in pL.CarList()) {
                 Console.WriteLine(c.Make);
             }
+            pL.TurnOutTheCarWithNumber("456");
+            foreach (var c in pL.CarList()) {
+                Console.WriteLine(c.Make);
+            }
         }
     }
 }
