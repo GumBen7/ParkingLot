@@ -1,0 +1,5 @@
+namespace ParkingLot {
+    class Park {
+
+    }
+}
